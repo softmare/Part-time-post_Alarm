@@ -1,0 +1,28 @@
+{
+	"board_title_index": 1,
+	"login_url": "https://wein.konkuk.ac.kr/common/user/loginProc.do",
+	"board_select": "#container > div > section.content > div.subcon > div.tab_wrap > div.tableType01.borderBottom > table > tbody > tr",
+	"board_select_2": "td",
+	"id_num_select": "#container > div > section.content > div.subcon > div.tab_wrap > div.tableType01.borderBottom > table > tbody > tr > input",
+	"id_num_get": "value",
+	"obj_to_send": {
+		"login": {
+			"rtnUrl": "8f4d222b9b8edea9acd345835aea594efbe2fd91b58f38dc7634e924e73e51ad",
+			"userId": "UserId",
+			"pw": "passward"
+		},
+		"go_page": {
+			"searchType": 1,
+			"searchValue": "토익",
+			"paginationInfo.currentPageNo": 1
+		}
+	},
+	"telegram": {
+		"bot_token": "Your telegram bot token",
+		"dst_id": "Your telegram Id num"
+	},
+	"last_id_num": 5586,
+	"board_select_comment": "테이블 : 인덱스 참조한 뒤 select('td') 사용 . 그뒤 인덱싱은 [기업명, 타이틀, 지역, 급여] 순임. 인덱싱후 .text붙일것",
+	"id_num_select_comment": "인덱스 참조, get('value') 사용. string으로 반환됨에 주의.",
+	"go_url": "https://wein.konkuk.ac.kr/ptfol/career/partTime/findPartTimeList.do"
+}
